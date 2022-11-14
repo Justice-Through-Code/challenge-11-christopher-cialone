@@ -114,18 +114,20 @@ def list_prices(laptops):
                 print(prices)
 
 # 2.2 TODO: Call your function to see that it works.
-
+list_prices(laptops)
 
 # 3.0 Suppose that the two versions of the 16-inch MacBook Pro are no longer available:
 #   - In the color 'space gray'
 #   - With '1 TB SSD' storage
 
 # 3.1 TODO: Update the `laptops` dictionary to reflect these changes.
-
+laptops[0]['types'][1]['colors'].remove('space gray')
+laptops[0]['types'][1]['storage'].remove('1 TB SSD')
 
 # 3.2 TODO: Print out the Macbook Pro dictionary to see the changes.
-
+print(laptops[0])
 
 # BONUS TODO: Write a function called `get_price_range` that returns the minimum and maximum prices out of all the options.
+#
 
 # ^ Expected outcome: (999, 2799)
